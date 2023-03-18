@@ -11,7 +11,34 @@
 		37123C9F29C58E9F00E8575D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37123C9E29C58E9F00E8575D /* ContentView.swift */; };
 		37123CA129C58EA200E8575D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37123CA029C58EA200E8575D /* Assets.xcassets */; };
 		37123CA429C58EA200E8575D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37123CA329C58EA200E8575D /* Preview Assets.xcassets */; };
+		37123CB429C5948F00E8575D /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37123CB329C5948F00E8575D /* DeviceActivity.framework */; };
+		37123CB729C5948F00E8575D /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37123CB629C5948F00E8575D /* DeviceActivityMonitorExtension.swift */; };
+		37123CBC29C5948F00E8575D /* DeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 37123CB129C5948F00E8575D /* DeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37123CBA29C5948F00E8575D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37123C9129C58E9E00E8575D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37123CB029C5948F00E8575D;
+			remoteInfo = DeviceActivityMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37123CC029C5948F00E8575D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				37123CBC29C5948F00E8575D /* DeviceActivityMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		37123C9929C58E9F00E8575D /* ScreenTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +46,12 @@
 		37123C9E29C58E9F00E8575D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37123CA029C58EA200E8575D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37123CA329C58EA200E8575D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37123CAC29C5943700E8575D /* ScreenTimeDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeDemo.entitlements; sourceTree = "<group>"; };
+		37123CB129C5948F00E8575D /* DeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		37123CB329C5948F00E8575D /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		37123CB629C5948F00E8575D /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		37123CB829C5948F00E8575D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37123CB929C5948F00E8575D /* DeviceActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitor.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +62,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37123CAE29C5948F00E8575D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37123CB429C5948F00E8575D /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				37123C9B29C58E9F00E8575D /* ScreenTimeDemo */,
+				37123CB529C5948F00E8575D /* DeviceActivityMonitor */,
+				37123CB229C5948F00E8575D /* Frameworks */,
 				37123C9A29C58E9F00E8575D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				37123C9929C58E9F00E8575D /* ScreenTimeDemo.app */,
+				37123CB129C5948F00E8575D /* DeviceActivityMonitor.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +95,7 @@
 		37123C9B29C58E9F00E8575D /* ScreenTimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37123CAC29C5943700E8575D /* ScreenTimeDemo.entitlements */,
 				37123C9C29C58E9F00E8575D /* ScreenTimeDemoApp.swift */,
 				37123C9E29C58E9F00E8575D /* ContentView.swift */,
 				37123CA029C58EA200E8575D /* Assets.xcassets */,
@@ -67,6 +112,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37123CB229C5948F00E8575D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37123CB329C5948F00E8575D /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37123CB529C5948F00E8575D /* DeviceActivityMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				37123CB629C5948F00E8575D /* DeviceActivityMonitorExtension.swift */,
+				37123CB829C5948F00E8575D /* Info.plist */,
+				37123CB929C5948F00E8575D /* DeviceActivityMonitor.entitlements */,
+			);
+			path = DeviceActivityMonitor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +140,34 @@
 				37123C9529C58E9F00E8575D /* Sources */,
 				37123C9629C58E9F00E8575D /* Frameworks */,
 				37123C9729C58E9F00E8575D /* Resources */,
+				37123CC029C5948F00E8575D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				37123CBB29C5948F00E8575D /* PBXTargetDependency */,
 			);
 			name = ScreenTimeDemo;
 			productName = ScreenTimeDemo;
 			productReference = 37123C9929C58E9F00E8575D /* ScreenTimeDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		37123CB029C5948F00E8575D /* DeviceActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37123CBD29C5948F00E8575D /* Build configuration list for PBXNativeTarget "DeviceActivityMonitor" */;
+			buildPhases = (
+				37123CAD29C5948F00E8575D /* Sources */,
+				37123CAE29C5948F00E8575D /* Frameworks */,
+				37123CAF29C5948F00E8575D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceActivityMonitor;
+			productName = DeviceActivityMonitor;
+			productReference = 37123CB129C5948F00E8575D /* DeviceActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +180,9 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					37123C9829C58E9F00E8575D = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					37123CB029C5948F00E8575D = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -116,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				37123C9829C58E9F00E8575D /* ScreenTimeDemo */,
+				37123CB029C5948F00E8575D /* DeviceActivityMonitor */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +213,13 @@
 			files = (
 				37123CA429C58EA200E8575D /* Preview Assets.xcassets in Resources */,
 				37123CA129C58EA200E8575D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37123CAF29C5948F00E8575D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +235,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37123CAD29C5948F00E8575D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37123CB729C5948F00E8575D /* DeviceActivityMonitorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37123CBB29C5948F00E8575D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37123CB029C5948F00E8575D /* DeviceActivityMonitor */;
+			targetProxy = 37123CBA29C5948F00E8575D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		37123CA529C58EA200E8575D /* Debug */ = {
@@ -262,8 +371,10 @@
 		37123CA829C58EA200E8575D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeDemo/ScreenTimeDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenTimeDemo/Preview Content\"";
@@ -273,8 +384,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,17 +394,22 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsubata.ScreenTimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		37123CA929C58EA200E8575D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeDemo/ScreenTimeDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenTimeDemo/Preview Content\"";
@@ -302,8 +419,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +429,61 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tsubata.ScreenTimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		37123CBE29C5948F00E8575D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitor/DeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8JPQ96MUU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsubata.ScreenTimeDemo.DeviceActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37123CBF29C5948F00E8575D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeviceActivityMonitor/DeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8JPQ96MUU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsubata.ScreenTimeDemo.DeviceActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,6 +507,15 @@
 			buildConfigurations = (
 				37123CA829C58EA200E8575D /* Debug */,
 				37123CA929C58EA200E8575D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37123CBD29C5948F00E8575D /* Build configuration list for PBXNativeTarget "DeviceActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37123CBE29C5948F00E8575D /* Debug */,
+				37123CBF29C5948F00E8575D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
